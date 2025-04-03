@@ -4,5 +4,18 @@
 	$y = 7;
 	echo "First number: ", $x,'<br>';
 	echo "Second number: ", $y, '<br>';
-	echo "The sum is: ", $x + $y;
+	echo "The sum is: ", $x + $y,'<br>';
 ?>
+
+<html>
+	<head>
+		<title> Hello PHP </title>
+	</head>
+
+	<body>
+		<form action="dashboard.php" method="POST">
+			Name: <input type="text" name="name" placeholder="Please enter your name here"><br>
+		</form>
+	</body>
+
+</html>
