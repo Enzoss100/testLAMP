@@ -1,17 +1,11 @@
 <?php
-	echo "Welcome ", $_POST['name'], ", this is the dashboard of the website",'<br>';
-	// Correct relative path to the DB
-	$db_path = __DIR__ . '/../database/app.db';
+session_start();
 
-	// Create or open the SQLite3 database
-	$db = new SQLite3($db_path);
+// Check if the user is logged in
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit;
+}
 
-	// Check if it connected properly
-	if (!$db) {
-		die("Failed to connect to the database.");
-	} 
-	else {
-		echo "Connected successfully!";
-	}
-
+echo "Welcome to your dashboard, " . $_SESSION['username'] . "!";
 ?>

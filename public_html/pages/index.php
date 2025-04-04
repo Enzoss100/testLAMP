@@ -16,6 +16,9 @@
 		<form action="dashboard.php" method="POST">
 			Name: <input type="text" name="name" placeholder="Please enter your name here"><br>
 		</form>
+
+		<button id="login"> Login </button>
 	</body>
 
+	<script src="../scripts/login.js"></script>
 </html>
