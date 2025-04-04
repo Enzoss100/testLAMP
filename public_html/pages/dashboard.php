@@ -1,5 +1,5 @@
 <?php
-	echo "Welcome ", $_POST['name'], ", this is the dashboard of the website",'<br?';
+	echo "Welcome ", $_POST['name'], ", this is the dashboard of the website",'<br>';
 	// Correct relative path to the DB
 	$db_path = __DIR__ . '/../database/app.db';
 
