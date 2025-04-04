@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     try {
         // Absolute path to your database
-        $pdo = new PDO('sqlite:/var/www/testLAMP/database/app.db');
+        $pdo = new PDO('sqlite:../database/app.db');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Prepared statement
