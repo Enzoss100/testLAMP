@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $code = $_POST['code'] ?? '';
 
     try {
-        // Absolute path to your database
+        // Relative path to your database
         $pdo = new PDO('sqlite:../database/app.db');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
